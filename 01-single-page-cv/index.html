@@ -3,204 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Эрнест Мухарлямов - Резюме</title>
-    
-    <style>
-        /* ======================= 
-           CSS СТИЛИЗАЦИЯ 
-           (Вы можете сохранить это в файл styles.css)
-        ======================= */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin: 0 auto; /* Центрируем содержимое на странице */
-        }
+    <title>My Name</title>
 
-        .container {
-            width: 85%;
-            max-width: 900px; /* Максимальная ширина для удобства чтения */
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Эффект легкой тени */
-        }
-
-        /* Общие стили для всех секций */
-        h2 {
-            color: #333;
-            border-bottom: 2px solid black;
-            padding-bottom: 5px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.4em;
-        }
-
-        /* Стиль для имени в шапке */
-        header {
-            border-bottom: 2px solid black;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-
-        .name {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .title {
-            font-size: 1.2em;
-            color: #666;
-        }
-
-        /* Контактная информация */
-        .contact-info p, .skills-list li {
-            margin: 3px 0;
-            color: #555;
-        }
-
-        /* Блок для Job/Education (используем Flexbox для выравнивания) */
-        .job-header {
-            display: flex;
-            justify-content: space-between; /* Разносит элементы по краям */
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        /* Стиль для заголовка должности/компании */
-        .job-title {
-            flex: 2; /* Занимает больше места */
-            font-size: 1.1em;
-            color: #333;
-        }
-
-        /* Стиль для дат (например, Место, Годы) */
-        .job-dates {
-            flex: 1; /* Занимает меньше места */
-            text-align: right;
-            font-weight: normal;
-            color: #777;
-        }
-
-        /* Пункты списка (достижения, навыки работы) */
-        ul {
-            padding-left: 20px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        /* Секция навыков */
-        .skills-list li {
-             display: inline-block; /* Позволяет элементам идти в ряд */
-             margin-right: 10px;
-             margin-bottom: 8px;
-             font-size: 0.95em;
-        }
-
-    </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- ========================
-           ШАПКА / КОНТАКТЫ
-        ======================== -->
-        <header>
-            <h1 class="name">Ваше Имя</h1>
-            <p class="title">Junior Frontend Developer</p>
+
+        <div>
+           <h1> My Name</h1>
+            <p style="font-size: 1.2em; color: #333; margin-top: -5px;">Junior Frontend Developer</p>
             <div class="contact-info">
-                <p>[Улица, Город, Почтовый индекс] | [Телефон]: +7 (XXX) XXX-XX-XX</p>
+                <p>Address: 123, My Street</p>
+                <p>Phone:+79998887766</p>
                 <p>Email: no_reply@example.com</p>
             </div>
-        </header>
+        </div>
 
-        <!-- ========================
-           НАВЫКИ
-        ======================== -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML5, CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>React / Vue.js (или другой фреймворк)</li>
-                <li>Responsiveness & Flexbox/Grid</li>
-                <li>Git / GitHub</li>
-                <li>SASS / LESS</li>
-            </ul>
-        </section>
+        <h2>Skills</h2>
+        <div class="skills-list-container">
 
-        <!-- ========================
-           ОБРАЗОВАНИЕ
-        ======================== -->
-        <section id="education">
-            <h2>Education</h2>
-            
-            <!-- Пример блока образования -->
-            <div class="job-header">
-                <span class="job-title">[Название ВУЗа или Курсов] - [Степень/Курс]</span>
-                <span class="job-dates">[Местоположение] | 20XX – 20XX</span>
+            <span class="skill-item">HTML5</span>
+            <span class="skill-item">CSS3</span>
+            <span class="skill-item">JavaScript (ES6+)</span>
+            <span class="skill-item">Responsive Design</span>
+            <span class="skill-item">React / Vue.js</span>
+            <span class="skill-item">Figma to Design</span>
+            <span class="skill-item">Technical Writing</span>
+        </div>
+
+        <h2>Education</h2>
+
+        <div class="experience-block">
+            <div class="header-row">
+                <span class="job-title">School name - Location, Degree</span>
+                <span class="job-dates">Month 20xx – Month 20xx</span>
             </div>
             <ul>
-                <li>Проект "Описание достижений" (например, разработка лендинга для вымышленной компании).</li>
-                <li>Курсовая работа по теме...</li>
-                <li>Акцент на практическое применение знаний: от теории к реализации.</li>
+                <li>List of achievments.</li>
+                <li>List of achievments.</li>
+                <li>List of achievments.</li>
             </ul>
-        </section>
+        </div>
 
-        <!-- ========================
-           ОПЫТ РАБОТЫ (ЕСТЬ ПОДРОБНЫЙ БЛОК)
-        ======================== -->
-        <section id="experience">
-            <h2>Experience</h2>
-            
-            <!-- Пример 1: Компании A -->
-            <div>
-                <div class="job-header">
-                    <span class="job-title">[Название Компании А] - [Ваша Должность]</span>
-                    <span class="job-dates">20XX – 20XX</span>
-                </div>
-                <ul>
-                    <li>Разработал и внедрил адаптивный компонент формы, улучшив конверсию на 15%.</li>
-                    <li>Участвовал в ежедневном цикле разработки (Code Review, тестирование).</li>
-                    <li>Обеспечил кроссбраузерную совместимость интерфейса.</li>
-                </ul>
+        <h2>Experience</h2>
+
+        <div class="experience-block">
+
+            <div class="header-row">
+                <span class="job-title">Company Name 1 - Job Title</span>
+                <span class="job-dates">Month 20xx – Month 20xx</span>
             </div>
+            <ul>
+                <li>List of achievments.</li>
+                <li>List of achievments.</li>
+                <li>List of achievments.</li>
+            </ul>
+        </div>
 
-             <!-- Пример 2: Компании B -->
-            <div>
-                <div class="job-header">
-                    <span class="job-title">[Название Компании Б] - [Ваша Должность]</span>
-                    <span class="job-dates">20XX – 20XX</span>
-                </div>
-                <ul>
-                    <li>Самостоятельно разработал макет страницы на чистом HTML/CSS.</li>
-                    <li>Использовал Git для совместной работы в команде из 4 человек.</li>
-                </ul>
+        <div class="experience-block">
+
+            <div class="header-row">
+                <span class="job-title">Company Name 2 - Job Title</span>
+                <span class="job-dates">Month 20xx – Month 20xx</span>
             </div>
+            <ul>
+                <li>List of achievments.</li>
+                <li>List of achievments.</li>
+                <li>List of achievments.</li>
+            </ul>
+        </div>
 
-            <div class="job-header" style="margin-top: 25px;">
-                 <span class="job-title">Навыки, полученные на работе</span>
-                 <span class="job-dates">[Перечисление ключевых навыков]</span>
-            </div>
-
-
-        </section>
-
-        <!-- ========================
-           ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
-        ======================== -->
-        <section id="online">
-             <h2>Across the Internet</h2>
-             <p style="color: #555;">Профиль GitHub: <a href="#" style="color: navy; text-decoration: none;">github.com/yourusername</a></p>
-             <p style="color: #555;">LinkedIn: <a href="#" style="color: navy; text-decoration: none;">linkedin.com/in/yourprofile</a></p>
-        </section>
+        <h2>Across the Internet</h2>
+        <p style="font-size: 0.9em;"><strong>LinkedIn</strong>: <a href="#" style="color: #2196F3; text-decoration: none;">linkedin.com/in/yourprofile</a></p>
+        <p style="font-size: 0.9em;"><strong>GitHub</strong>: <a href="#" style="color: #2196F3; text-decoration: none;">https://github.com/runionuser</a></p>
 
     </div>
-
 </body>
 </html>
